@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Add the Date to the page</title>
+<style>
+        #demo {
+           background-color: #EFEFEF; 
+           font-family: sans-serif; 
+           padding: 10px; 
+           width; 150px; 
+           border: 1px solid black;
+        }
+</style>        
+</head>
+<body>
+
+<h1>JavaScript Add the Date to the page</h1>
+<h2>(Date.now() inside new Date())</h2>
+
+<p>Using the <code>new Date(Date.now())</code> option from ECMAScript 5, you can more easily print out the date/time:</p>
+
+<p>More on Date functions in Javascript and how to handle is available at: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date</a></p>
+
+<p id="demo" style="background-color: #EFEFEF; font-family: sans-serif; padding: 10px; width; 150px; border: 1px solid black;"></p>
+
+<script>
+var myDate = new Date(Date.now());
+
+document.getElementById("demo").innerHTML = myDate;
+</script>
+
+</body>
+</html>
